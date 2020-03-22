@@ -1,28 +1,10 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 
 function Portfolio (props) {
-    return (
-    props.data ?  
-      (props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
-      
-          <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap">
-              <a href={projects.url} title={projects.title}>
-                <img alt={projects.title} src={projectImage} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                    <p>{projects.category}</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-      }))
-      : 
 
-      (  <section id="portfolio">
+  return (
+      
+        <section id="portfolio">
 
         <div className="row">
 
@@ -31,11 +13,28 @@ function Portfolio (props) {
             <h1>Check Out Some of My Works.</h1>
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {projects}
+              
+      {props.data.projects.map ((project) =>  (
+        // projectImage = 'images/portfolio/' + project.image
+        
+          <div key={project.title} className="columns portfolio-item">
+            <div className="item-wrap">
+              <a href={project.url} title={project.title}>
+                <img alt={project.title} src={'images/portfolio/' + project.image} />
+                <div className="overlay">
+                  <div className="portfolio-item-meta">
+                    <h5>{project.title}</h5>
+                    <p>{project.category}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      ))}
             </div>
           </div>
         </div>
-      </section> ) 
+      </section> 
 
       )}
 
