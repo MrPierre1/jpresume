@@ -2,6 +2,21 @@ import React, { useEffect } from 'react';
 
 function Portfolio (props) {
 
+  const anchorStyle = {
+     align: 'center',
+     // whiteSpace: 'nowrap',
+    // display: 'inline-block',
+  }
+
+  const aStyle = { 
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    // padding: '0 0px',
+    // margin: 'auto auto',
+    fontSize: '20px',
+    margin: '1% 10%',
+   
+
+  }
   return (
       
         <section id="portfolio">
@@ -19,7 +34,7 @@ function Portfolio (props) {
         
           <div key={project.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <a href={project.url} title={project.title}>
+              <a href={project.url} title={project.title} target="_blank">
                 <img alt={project.title} src={'images/portfolio/' + project.image} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
@@ -28,7 +43,12 @@ function Portfolio (props) {
                   </div>
                 </div>
               </a>
-            </div>
+             </div>
+             <div style={anchorStyle}>
+                <a style={aStyle} href={project.url} title={project.title} target="_blank" className="button btn project-btn"> <i className="fa fa-book"></i>View Demo </a>
+          
+             </div>
+            
           </div>
       ))}
             </div>

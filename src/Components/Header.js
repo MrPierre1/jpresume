@@ -9,15 +9,12 @@ function Header (props) {
        var github = props.data.github;
       var name = props.data.name;
       var description= props.data.description;
-      var city= props.data.address.city;
-      var networks= props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
+ 
     }
 
     return (
       <header id="home">
-      <ParticlesBg type="circle" bg={true} />
+      <ParticlesBg type="random" bg={true} />
       <nav id="nav-wrap">
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
@@ -27,7 +24,6 @@ function Header (props) {
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
             <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
          </ul>
       </nav>
 
