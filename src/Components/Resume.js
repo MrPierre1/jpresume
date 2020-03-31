@@ -52,7 +52,7 @@ function Resume (props) {
 
 
 
-      <div className="row skill">
+      {/* <div className="row skill">
 
          <div className="three columns header-col">
             <h1><span>Skills</span></h1>
@@ -77,7 +77,7 @@ function Resume (props) {
 					</ul>
 				</div>
 			</div>
-      </div>
+      </div> */}
    </section>
     // );
   )
