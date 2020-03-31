@@ -52,32 +52,32 @@ function Resume (props) {
 
 
 
-      <div className="row skill">
+//       <div className="row skill">
 
-         <div className="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
+//          <div className="three columns header-col">
+//             <h1><span>Skills</span></h1>
+//          </div>
 
-         <div className="nine columns main-col">
+//          <div className="nine columns main-col">
 
-            <p>
-              {skillmessage}
+//             <p>
+//               {skillmessage}
 
-            </p>
+//             </p>
 
-				<div className="bars">
-				   <ul className="skills">
-					  {props.data.skills.map((skills)=> (
-        //  className = 'bar-expand '+skills.name.toLowerCase();
-          <li key={skills.name}>
-            <span style={{width:skills.level, backgroundColor:getRandomColor()}}className={'bar-expand '+skills.name.toLowerCase()}></span><em>{skills.name}</em>
-          </li>
-            ))
-    }
-					</ul>
-				</div>
-			</div>
-      </div>
+// 				<div className="bars">
+// 				   <ul className="skills">
+// 					  {props.data.skills.map((skills)=> (
+//         //  className = 'bar-expand '+skills.name.toLowerCase();
+//           <li key={skills.name}>
+//             <span style={{width:skills.level, backgroundColor:getRandomColor()}}className={'bar-expand '+skills.name.toLowerCase()}></span><em>{skills.name}</em>
+//           </li>
+//             ))
+//     }
+// 					</ul>
+// 				</div>
+// 			</div>
+//       </div>
    </section>
     // );
   )
