@@ -96,6 +96,12 @@
   "portfolio":{
     "projects": [
       {
+        "title":"Find My Home",
+        "category":"Home searching just got easier",
+        "image":"searchprop.png",
+        "url":"https://find-my-home-sage.now.sh/"
+      },
+      {
         "title":"Budget App",
         "category":"Manage your budget and expense",
         "image":"budget.png",

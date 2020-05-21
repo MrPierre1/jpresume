@@ -4,14 +4,10 @@ function Portfolio (props) {
 
   const anchorStyle = {
      align: 'center',
-     // whiteSpace: 'nowrap',
-    // display: 'inline-block',
   }
 
   const aStyle = { 
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    // padding: '0 0px',
-    // margin: 'auto auto',
     fontSize: '15px',
     margin: '1% 10%',
    
