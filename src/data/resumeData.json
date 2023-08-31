@@ -1,9 +1,9 @@
 {
   "main": {
     "name":"Jean Pierre-Louis (JP)",
-    "description":"I am a QA Advocate and I use technology to make things happen",
+    "description":"Leading people and creating lasting change",
     "image":"profilepic.jpg",
-    "bio":"Leader, Technologist, Entreprenuer, Father, Trouble-maker :) I build apps using different technologies, I'm not married to one language but I have long term relationship with Javascript :) and all of it's associating frameworkes.Every problem has 3 solutions (The right one, The sophisticated one or the JP one)",
+    "bio":"Leader, Manager, Technologist, Entreprenuer",
     "contactmessage":"Find me on social media",
     "email": "Find me on LinkedIn",
     "github":"https://github.com/MrPierre1/",
@@ -33,7 +33,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"I can automated anything, UI, Native apps, Processes and create custom solutions",
+    "skillmessage":"Help people grow and create beautiful software",
     "education":[
       {
         "school":"North Carolina Central University",
@@ -95,24 +95,7 @@
   },
   "portfolio":{
     "projects": [
-      {
-        "title":"Find My Home",
-        "category":"Home searching just got easier",
-        "image":"searchprop.png",
-        "url":"https://find-my-home-sage.now.sh/"
-      },
-      {
-        "title":"Budget App",
-        "category":"Manage your budget and expense",
-        "image":"budget.png",
-        "url":"https://mybudget.now.sh/"
-      },
-      {
-        "title":"Python 1:1",
-        "category":"App to manage 1:1 with teams",
-        "image":"python1on1.png",
-        "url":"https://github.com/MrPierre1/OneonOneApp"
-      }
+      
     ]
   }
 }
